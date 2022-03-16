@@ -1,0 +1,5 @@
+.feature__container{
+    width: 40px;
+    height: 2px;
+    background:var(--gradient-text);
+}

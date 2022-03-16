@@ -1,0 +1,144 @@
+a{
+    color: #ffffff;
+}
+.navbar__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color:#031b34be;
+    z-index: 10;
+}
+.navbar__content{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    
+}
+.navbar__logo{
+    width: 62.56px;
+    height: 16.02px;
+    display: flex;
+flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.navbar__logo img{
+    width: 100%;
+}
+.navbar__content-left{
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem;
+}
+.navbar__content-left > li{
+    list-style: none;
+    margin-right: 3rem;
+}
+
+.navbar__content-right{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+.navbar__content-right p{
+    margin-right: 1rem;
+}
+.navbar__content-right a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #FF4820;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+}
+.navbar__toggle__menu{
+    display: none;
+    cursor: pointer;
+}
+.navbar__hamburgermenu{
+    position: absolute;
+    height: 100vh;
+    width: 50%;
+    
+    top: 0;
+    right: 0;
+}
+.hamburgermenu__toggle{
+    padding: 1rem 1rem;
+    cursor: pointer;
+}
+.hamburgermenu__content__item{
+    list-style:none;
+    margin: 0rem 1rem;
+}
+.hamburgermenu__content__item >li{
+    margin: 2rem 0rem;
+}
+.hamburgermenu__right{
+    
+    margin-right: 2rem;
+}
+.hamburgermenu__right p{
+    margin-right: 1rem;
+}
+.hamburgermenu__right a{
+    display: flex;
+    align-items: center;
+    background-color: #FF4820;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+}
+
+
+@media screen and (max-width:1190px){
+    .navbar__content{
+        padding: 2rem 2rem;
+    }
+}
+@media screen and (max-width:1050px){
+    .hamburgermenu__right{
+        display:none ;
+    }
+    .navbar__content-left{
+        display: none;
+    }
+    .navbar__content-right{
+        flex: 1;
+        justify-content: flex-end;
+    }
+    .navbar__toggle__menu{
+        display: block;
+    }
+
+}
+@media screen and (max-width:450px){
+    .hamburgermenu__right{
+        display:block ;
+        padding: 1rem;
+    }
+    .navbar__content-right{
+        display: none;
+    }
+    .hamburgermenu__right p{
+        color: #ffffff;
+        
+        padding-bottom: 1rem;
+    }
+    .hamburgermenu__right a{
+        width: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
